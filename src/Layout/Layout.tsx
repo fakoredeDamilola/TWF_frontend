@@ -1,7 +1,6 @@
 import { Box, Flex, useMediaQuery } from '@chakra-ui/react'
 import React, { useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import TransactionStateModal from '../components/modals/ModalInfo'
 import DashboardNav from '../components/Navs/DashboardNav'
 import MainNav from '../components/Navs/MainNav'
 import SideNav from '../components/Navs/SideNav'

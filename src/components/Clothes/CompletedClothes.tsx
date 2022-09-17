@@ -6,7 +6,7 @@ import ClothesItem from './ClothesItem'
 const CompletedClothes = () => {
   const clothes = [
     {
-      id: 1,
+      _id: 1,
       name: 'T-shirt',
       price: 10,
       picture: '',
@@ -30,7 +30,7 @@ const CompletedClothes = () => {
     // ],
     },
     {
-      id: 1,
+      _id: 1,
       name: 'T-shirt',
       price: 10,
       picture: '',
@@ -54,7 +54,7 @@ const CompletedClothes = () => {
     // ],
     },
     {
-      id: 3,
+      _id: 3,
       name: 'T-shirt',
       price: 10,
       picture: '',
