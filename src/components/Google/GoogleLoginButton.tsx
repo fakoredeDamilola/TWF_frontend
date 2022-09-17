@@ -17,7 +17,7 @@ const clientID = import.meta.env.VITE_CLIENT_ID
   }}
   
   onError={() => {
-    console.log('Login Failed');
+    console.log('Login Failed ');
   }}
 />
         </Box>
