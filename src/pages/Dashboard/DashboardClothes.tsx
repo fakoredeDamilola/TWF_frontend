@@ -110,7 +110,7 @@ const DashboardClothes = () => {
   
   <TabPanels>
     <TabPanel>
-      <ClothesList clothes={clothes} addButton={false}/>
+      <ClothesList addButton={false}/>
     </TabPanel>
     <TabPanel>
       <CompletedClothes />
