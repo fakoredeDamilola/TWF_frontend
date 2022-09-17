@@ -32,11 +32,11 @@ const TransactionStateModal = ({open,close,click,type}:{open:boolean,close:()=>v
 
   const [modalOpen, setModalOpen] = useState(false);
   const dispatch = useDispatch();
-  const modalDetails = useSelector(
-    (state: RootState) => state.modals.modal
+  const {modal,message}= useSelector(
+    (state: RootState) => state.modals
   );
-  console.log({ modalDetails });
-  const setOpen = modalDetails === null ? false : true;
+  console.log({ modal });
+  const setOpen = modal === null ? false : true;
 
   function handleCloseModal() {
     dispatch(setCloseModal());
@@ -116,7 +116,7 @@ const TransactionStateModal = ({open,close,click,type}:{open:boolean,close:()=>v
                   fontWeight='bold'
                   color={textColour}
                 >
-                  {modalDetails?.message}
+                  {message}
                 </Text>
               ) : type === TrxState.TransactionFailed ? (
                 <>
@@ -136,7 +136,7 @@ const TransactionStateModal = ({open,close,click,type}:{open:boolean,close:()=>v
                     fontWeight='normal'
                     color={errorBgColour}
                   >
-                    {modalDetails?.message}
+                    {message}
                   </Text>
                 </>
               ) : type === TrxState.TransactionSuccessful ? (
